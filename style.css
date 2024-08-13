@@ -120,14 +120,12 @@ html body {
 .icons {
   text-align: center;
 }
-.product.test {
-  top: 0;
-  transform: translateY(0);
-  transition: transform 0.5s !important;
+.product .test {
+  transition: transform 0.5s;
 }
 .product:hover .test {
-  transition: transform 0.5s !important;
-  transform: translateY(-10%);
+  transition: transform 0.5s;
+  transform: translateY(-20%);
 }
 .product h5 {
   font-weight: 600;
