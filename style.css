@@ -1,4 +1,5 @@
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 * {
@@ -116,6 +117,11 @@ html body {
   color: black;
   background-color: transparent;
   overflow: hidden;
+  text-decoration: none;
+}
+.product:hover{
+  text-decoration: none;
+  color: black;
 }
 .icons {
   text-align: center;
@@ -313,7 +319,7 @@ html body {
   text-decoration: none;
 }
 .post img {
-  width: 350px;
+  /* width: 350px; */
   border-radius: 20px;
   opacity: 2;
   transition: opacity 0.5s;
@@ -352,6 +358,7 @@ html body {
   border: 1px solid;
   border-color: #a7b6b0;
 }
+#total .couponCode input:focus,
 #footer-sec .inputs input:focus {
   border-color: #0e241c;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
@@ -399,26 +406,23 @@ html body {
   margin-left: 270px;
 }
 /*-----------about.html Team-section-------*/
-#team .person img{
-  width: 250px;
-  height: 250px;
-}
-#team .view{
+#team .view {
   margin-top: 50px;
-  color: black;
+  color: black !important;
 }
-#team .person a{
-  color: black;
+#team .person a {
+  color: rgb(73, 69, 69);
+  font-weight: 600;
 }
-#team .person a:hover{
+#team .person a:hover {
   text-decoration: none;
 }
 /*--------------card-section--------------------*/
-#card .cart{
+#card .cart {
   width: 50%;
   margin-left: 150px;
 }
-#card .cart button{
+#card .cart button {
   border-radius: 10px;
   border: none;
   background-color: #305044;
@@ -426,41 +430,119 @@ html body {
   padding: 14px 25px;
 }
 /*--------------------information section------------*/
-#information{
+#information {
   margin-left: 250px;
 }
-#information .in{
+#information .in {
   width: 50%;
 }
-#information input{
+#information input {
   border-radius: 10px;
   border: 1px solid;
   border-color: #a7b6b0;
   outline: none;
   text-indent: 10px;
 }
-#information input:focus{
+#information input:focus {
   border-color: #0e241c;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
-#information .in input{
+#information .in input {
   width: 370px;
   height: 50px;
 }
-#information .em-in input{
+#information .em-in input {
   width: 770px;
   height: 50px;
 }
-#information .me-in input{
+#information .me-in input {
   width: 770px;
   height: 150px;
+}
+/*-----------------cart section-----------------------*/
+#chart .table th {
+  background-color: #eff2f1;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.8);
+  border-color: black;
+  border-top: none;
+  text-align: center;
+  vertical-align: middle;
+}
+#chart .table td {
+  background-color: #eff2f1;
+}
+#chart .table .prop td {
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+#chart .table .proImage img {
+  width: 150px;
+  height: 150px;
+}
+#chart .table .prop .proName {
+  font-size: 20px;
+  font-weight: 500;
+}
+#chart .table .prop .proPrice {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+.quantity-btn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin-inline: 5px;
+}
+.quantity-btn:focus,
+.quantity-input:focus {
+  outline: none;
+}
+.quantity-input {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #dee2e6;
+}
+#chart .table .prop .proTotal {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}
+/*---------------------Total section-----------------------*/
+#total td {
+  border-style: hidden !important;
+}
+#total button:focus,
+#total button:hover {
+  box-shadow: none;
+  background-color: rgb(34, 34, 34);
+}
+#total .table .productTot {
+  padding-top: 30px;
+}
+#total .couponCode input {
+  border-radius: 10px;
+  width: 370px;
+  height: 50px;
+  outline: none;
+  border: 1px solid;
+  border-color: #a7b6b0;
+  text-indent: 10px;
+}
+#total .applyBtn {
+  border-radius: 23px !important;
+  padding: 10px 30px !important;
 }
 /*---------------media-section--------*/
 @media (max-width: 768px) {
   #nav-bar .navbar-brand {
     margin-left: 10px !important;
   }
-  #banner .sof{
+  #banner .sof {
     width: 500px !important;
     height: 500px !important;
     margin-left: 30px !important;
@@ -470,18 +552,14 @@ html body {
     margin-left: 250px !important;
   }
   #choose .why {
-    display: inline !important;
+    display: block !important;
+  }
+  #choose .why .partOne {
+    display: table-cell !important;
   }
   .hero-img::after {
-    top: 10px !important;
+    top: -30px !important;
     left: -100px;
-  }
-  .spot img {
-    padding-top: 100px;
-    left: -10px !important;
-    width: 350px !important;
-    height: 450px !important;
-    border-radius: 20px;
   }
   #help .grids {
     display: inline !important;
@@ -507,11 +585,11 @@ html body {
   #some-products .parts {
     display: inline !important;
   }
-  #slider .carousel-control-prev{
+  #slider .carousel-control-prev {
     left: -10px !important;
     margin-top: 300px !important;
   }
-  #slider .carousel-control-next{
+  #slider .carousel-control-next {
     right: -10px !important;
     margin-top: 300px !important;
   }
@@ -530,7 +608,7 @@ html body {
   #footer-sec .end {
     display: inline !important;
   }
-  #footer-sec .part-1  {
+  #footer-sec .part-1 {
     margin-left: -50px !important;
     display: inline !important;
   }
@@ -541,29 +619,58 @@ html body {
   #footer-sec .fin {
     margin-left: 10px !important;
   }
-  #team .people{
+  #team .people {
     display: inline !important;
   }
-  #team .person{
-    display: table-footer-group !important;
+  #team .person {
+    display: contents !important;
   }
-  #card .cart{
+  #card .cart {
     margin: 0 !important;
     display: contents !important;
   }
-  #card .cart button{
+  #card .cart button {
     margin-top: 10px !important;
   }
-  #information{
+  #information {
     margin: 0 !important;
   }
-  #information .in{
-    display: inline !important;
+  #information .in input {
+    width: 190px !important;
   }
-  #information .input-1{
-    margin: 0 !important;
-  }
-  #information  input {
+  #information input {
     width: 400px !important;
   }
+  #chart .site-blocks-table{
+    overflow: auto;
+  }
+  #chart .proImage img{
+    width: 74px !important;
+    height: 74px !important;
+  }
+  #chart .proName h5{
+    font-size: 14px;
+    font-weight: bold;
+  }
+  #total .table {
+    display: inline !important;
+  }
+  #total .part-1 .shopping {
+    margin-left: -8px !important;
+    margin-top: 10px !important;
+  }
+  #total .couponCode {
+    display: inline !important;
+  }
+  #total .couponCode button {
+    margin-top: 10px !important;
+    margin-left: 1px !important;
+  }
+  #total .part-2 {
+    display: inline-table !important;
+  }
+  #total .part-2 button {
+    width: 280px;
+  }
 }
+
