@@ -119,7 +119,7 @@ html body {
   overflow: hidden;
   text-decoration: none;
 }
-.product:hover{
+.product:hover {
   text-decoration: none;
   color: black;
 }
@@ -513,6 +513,11 @@ html body {
   color: rgba(0, 0, 0, 0.8);
 }
 /*---------------------Total section-----------------------*/
+#chart .proRemove .crossOne {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
 #total td {
   border-style: hidden !important;
 }
@@ -536,6 +541,95 @@ html body {
 #total .applyBtn {
   border-radius: 23px !important;
   padding: 10px 30px !important;
+}
+/***************** Checkout *******************/
+#box .box a {
+  color: black;
+}
+#box .box a:hover {
+  text-decoration: none;
+}
+#box .box p {
+  border: #0e241c;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.5);
+  padding: 24px 26px;
+}
+/*********************************details part */
+#details .partThree,
+#details .firstPart,
+#details .secondPart {
+  box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  padding: 50px 50px;
+}
+#details .firstPart label {
+  margin-top: 10px;
+  font-weight: 400;
+  color: #000;
+  line-height: 28px;
+}
+#details .input-group input {
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  border: 1px solid;
+  border-color: #a7b6b0;
+  width: 100%;
+}
+#details .orderBox input {
+  height: 25vh;
+}
+#details .orderBox ::placeholder {
+  top: -100px !important;
+}
+#details .form-group input:focus,
+#details .form-group select:focus,
+#details .form-group textarea:focus,
+#details .input-group input:focus {
+  border-color: #0e241c;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+}
+#details .secondPart {
+  background-color: #fff;
+}
+#details .table th {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+  color: rgb(0, 0, 0);
+  border-color: black;
+  border-top: none;
+  vertical-align: middle;
+}
+#details .boxes h6 {
+  box-shadow: 0px 0px 1.5px 0px rgba(0, 0, 0, 0.5);
+  padding: 18px 24px;
+}
+#details .boxes a {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(47, 47, 47);
+}
+#details .boxes a:hover {
+  text-decoration: none;
+}
+#details .placeOrder:focus{
+  outline: none !important;
+  border: none !important;
+}
+/***************************************#Thanks section*/
+#thanks .shoppingCart {
+  width: 70px;
+  /* margin-top: 20px; */
+  text-align: center;
+}
+#thanks .checkIcon{
+  color: #3b5d50;
+  font-size: 30px;
+  margin-left: -4%;
+  padding-bottom: 50px;
+  text-align: center;
 }
 /*---------------media-section--------*/
 @media (max-width: 768px) {
@@ -641,14 +735,14 @@ html body {
   #information input {
     width: 400px !important;
   }
-  #chart .site-blocks-table{
+  #chart .site-blocks-table {
     overflow: auto;
   }
-  #chart .proImage img{
+  #chart .proImage img {
     width: 74px !important;
     height: 74px !important;
   }
-  #chart .proName h5{
+  #chart .proName h5 {
     font-size: 14px;
     font-weight: bold;
   }
@@ -671,6 +765,13 @@ html body {
   }
   #total .part-2 button {
     width: 280px;
+  }
+  #details .container{
+    display: inline-block !important;
+  }
+  #thanks .checkIcon{
+    margin-left: -11%;
+    font-size: 25px;
   }
 }
 
